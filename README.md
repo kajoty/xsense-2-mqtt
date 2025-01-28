@@ -4,7 +4,7 @@ https://pypi.org/project/python-xsense/
 ```
 sudo -i
 ```
-## made virtual enviroment
+## make virtual enviroment
 
 ```
 python3 -m venv myenv
