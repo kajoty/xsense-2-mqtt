@@ -39,9 +39,12 @@ dump_environment(api)
 
 
 
-# save file
+## save file
+
+[CTRL] x -> Y -> Enter
 
 ## start file
-python3 sync-xsense.py
+
+python3 sync-xsense.py >> daten.txt
 
 
