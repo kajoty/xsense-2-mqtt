@@ -1,24 +1,36 @@
 
 https://pypi.org/project/python-xsense/
 
+```
 sudo -i
-
+```
 ## made virtual enviroment
 
+```
 python3 -m venv myenv
+```
 
 # activate
+
+```
 source myenv/bin/activate
+```
 
 # install python-xsense & aiohttp
 
+```
 pip install python-xsense
+```
 
+```
 pip install aiohttp
+```
 
 # create python file
 
+```
 nano sync-xsense.py
+```
 
 ## paste code (change username (mailadresse) & password)
 
@@ -50,4 +62,6 @@ python3 sync-xsense.py >> daten.txt
 ```
 # start process.py (change in file broker IP + Port)
 
+```
 python3 process.py
+```
