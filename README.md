@@ -20,7 +20,7 @@ pip install aiohttp
 
 nano sync-xsense.py
 
-# paste code (change username (mailadresse) & password)
+## paste code (change username (mailadresse) & password)
 
 
 ``` 
@@ -41,10 +41,13 @@ dump_environment(api)
 
 ## save file
 
-[CTRL] x -> Y -> Enter
+[CTRL] x -> y -> Enter
 
-## start file
+# start file
 
+```
 python3 sync-xsense.py >> daten.txt
+```
+# start process.py (change in file broker IP + Port)
 
-
+python3 process.py
