@@ -23,16 +23,19 @@ nano sync-xsense.py
 # paste code (change username (mailadresse) & password)
 
 
-``` from xsense import XSense
->>> from xsense.utils import dump_environment
->>> api = XSense()
->>> api.init()
->>> api.login(username, password)
->>> api.load_all()
->>> for _, h in api.houses.items():
->>>     for _, s in h.stations.items():
->>>         api.get_state(s)
->>> dump_environment(api)```
+``` 
+from xsense import XSense
+from xsense.utils import dump_environment
+ api = XSense()
+api.init()
+api.login(username, password)
+api.load_all()
+for _, h in api.houses.items():
+     for _, s in h.stations.items():
+         api.get_state(s)
+
+dump_environment(api)
+```
 
 
 
