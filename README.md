@@ -1,5 +1,11 @@
 
+this Script uses the library found here:
+
 https://pypi.org/project/python-xsense/
+
+the github repo is here:
+https://github.com/theosnel/python-xsense
+
 
 ```
 sudo -i
