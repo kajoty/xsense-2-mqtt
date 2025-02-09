@@ -1,2 +1,3 @@
 paho-mqtt
-xsense
+python-xsense
+aiohttp

@@ -1,0 +1,28 @@
+{
+    "wifi_rssi": {
+      "name": "WiFi RSSI",
+      "unit": "dBm",
+      "description": "Signalstärke des WiFi"
+    },
+    "sw_version": {
+      "name": "Software Version",
+      "unit": "Version",
+      "description": "Version der Geräte-Software"
+    },
+    "temperature": {
+      "name": "Temperatur",
+      "unit": "°C",
+      "description": "Temperatur des Geräts"
+    },
+    "humidity": {
+      "name": "Luftfeuchtigkeit",
+      "unit": "%",
+      "description": "Luftfeuchtigkeit des Geräts"
+    },
+    "co": {
+      "name": "Kohlenmonoxid",
+      "unit": "ppm",
+      "description": "Konzentration von Kohlenmonoxid"
+    }
+  }
+  
