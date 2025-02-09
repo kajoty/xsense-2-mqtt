@@ -25,7 +25,7 @@ source myenv/bin/activate
 # install python-xsense & aiohttp
 
 ```
-pip install python-xsense
+pip install -r requirements.txt
 ```
 
 ```
