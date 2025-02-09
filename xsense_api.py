@@ -1,20 +1,13 @@
 from xsense import XSense
-from config import XSENSE_USERNAME, XSENSE_PASSWORD
+from xsense.utils import dump_environment
+from config import XSENSE_USERNAME, XSENSE_PASSWORD, XSENSE_DUMP_PATH
 
-class XSenseApi:
-    def __init__(self):
-        self.api = XSense()
-
-    def initialize(self):
-        self.api.init()
-        self.api.login(XSENSE_USERNAME, XSENSE_PASSWORD)
-
-    def fetch_data(self):
-        device_data = {}
-        self.api.load_all()
-        for _, house in self.api.houses.items():
-            for _, station in house.stations.items():
-                state = self.api.get_state(station)
-                if state:
-                    device_data[station.serial] = state.values if state.values else None
-        return device_data
+def dump_xsense_data():
+    api = XSense()
+    api.init()
+    api.login(XSENSE_USERNAME, XSENSE_PASSWORD)
+    api.load_all()
+    for _, h in api.houses.items():
+        for _, s in h.stations.items():
+            api.get_state(s)
+    dump_environment(api, XSENSE_DUMP_PATH)

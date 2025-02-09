@@ -10,3 +10,6 @@ MQTT_PASSWORD = "dein_mqtt_passwort"
 # XSense API-Konfiguration
 XSENSE_USERNAME = "dein_xsense_benutzername"
 XSENSE_PASSWORD = "dein_xsense_passwort"
+
+# Die Datei speichert die Rohdaten von XSense in einer JSON-Datei XSENSE_DUMP_PATH
+XSENSE_DUMP_PATH = "xsense_dump.json"
